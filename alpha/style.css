@@ -1,6 +1,8 @@
 @font-face {
     font-family: inter;
     src: url('Inter-VariableFont.woff2') format('woff2');
+    font-weight: 300;
+    font-size: 36px;
 }
 
 .description{
