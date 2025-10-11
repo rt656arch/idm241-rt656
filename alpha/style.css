@@ -1,0 +1,60 @@
+@font-face {
+    font-family: inter;
+    src: url('Inter-VariableFont.woff2') format('woff2');
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    font-family: 'inter', sans-serif;
+}
+
+.top {
+    font-family: 'inter', sans-serif;
+}
+
+.description > div {
+    margin: 20px;
+    width: 100%;
+}
+
+
+h3 {
+    margin-bottom: 5px;
+}
+p {
+    margin: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+}
+
+.top {
+    text-align: center;
+}
+
+b {
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .images {
+        flex-direction: column;
+        width: 100%;
+    }
+}
