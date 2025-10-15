@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    width: 202px;
+    height: 158px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 202px;
+    height: 158px;
+    background-color: rgba(0,0,0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
