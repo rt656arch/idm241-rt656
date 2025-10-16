@@ -1,26 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
 .container {
-    position: relative;
-    width: 202px;
-    height: 158px;
-    overflow: hidden;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+  position: relative; /* Essential for positioning the overlay relative to the container */
+  width: 350px; /* Example width */ /* Example height */
+  background-color: lightblue; /* Example background */
+  overflow: hidden; /* Ensures overlay stays within container bounds if it's larger */
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 202px;
-    height: 158px;
-    background-color: rgba(0,0,0);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  position: absolute; /* Positions the overlay relative to the nearest positioned ancestor (the container) */
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the overlay span the full width of the container */
+  height: 100%; /* Makes the overlay span the full height of the container */
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+  color: white; /* Text color for the overlay content */
+  display: flex; /* Centers content within the overlay */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stacks overlay content vertically */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out; /* Smooth transition for opacity change */
 }
 
 .container:hover .overlay {
-    opacity: 1;
+  opacity: 1; /* Makes the overlay visible on hover */
 }
