@@ -196,3 +196,12 @@ hr {
 }
 
 
+.images {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.images img {
+    /* transition: transform 0.1s ease-in; */
+    width: 300px;
+    height: 100%;
+}
