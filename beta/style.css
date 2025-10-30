@@ -13,7 +13,8 @@ body {
 .container {
     display: flex;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    margin-top: 50px;
     position: relative;
     border-radius: 5px;
     overflow: hidden; 
@@ -165,35 +166,7 @@ hr {
     display: block;
 }
 
-.modal-container {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    /* display: none; */
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
 
-}
-
-.modal-container .show {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.modal {
-    background-color: white;
-    width: 320px;
-    max-width: 100%;
-    padding: 30px 50px;
-    border-radius: 20px;
-    text-align: center;
-}
 
 
 .images {
@@ -204,4 +177,9 @@ hr {
     /* transition: transform 0.1s ease-in; */
     width: 300px;
     height: 100%;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 50px;
 }
