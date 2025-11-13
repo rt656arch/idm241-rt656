@@ -187,3 +187,31 @@ h5 {
 strong {
     color: red;
 }
+
+.example-product-card {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-container {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 670px) {
+    .example-product-card {
+        flex-wrap: wrap;
+    }
+
+    .product-container h5 {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+}
