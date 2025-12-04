@@ -17,7 +17,7 @@ body {
 .container {
     display: flex;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 50px;
     position: relative;
     border-radius: 5px;
@@ -266,7 +266,7 @@ strong {
 }
 
 
-.like_button {
+.like_button, .like_button1{
     width: 150px;
     height: 50px;
     background-color: #AAAAAA;
@@ -280,43 +280,102 @@ strong {
 }
 
 
-.animated .bx {
-    transition: all 0.5s;
-    position: relative
-}
 
 
 
-.animated .bx::after {
-    position: absolute;
-    content: '';
-    height: 12px;
-    width: 20px;
-    background-color: #aaa;
-    transform: rotate(15deg);
-    left: 5px;
-    top: -5px
-}
-
-.animated .bx {
-    transform: rotate(20deg);
-    
-}
-
-.like_button .bx{
-    transition:all 0.5s;
-}
-
-
-.like_button .like_text {
-    padding-left: 8px;
-    font-size:19px;
-    margin-top:2px;
-    transition:all 0.8s;
-}
-
-#like-btn {
+#like-btn, #like-btn1 {
     transition: transform 0.25s ease, color 0.25s ease;
     display: inline-block; /* Important: allows rotation */
 }
 
+
+.product-title h5 {
+    margin: 10px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+.product-title h5 a{
+    color: black;
+    text-decoration: none;
+}
+
+.product-title h5 a:hover{
+    text-decoration: underline;
+}
+
+.product-author h6 {
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 4px;
+    font-weight: normal;
+}
+
+.product-author h6 a{
+    color: black;
+    text-decoration: none;
+}
+
+.product-author h6:hover {
+    text-decoration: underline;
+}
+
+.product-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.thumbs-up {
+    justify-self: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#like-count, #like-count1 {
+    display: inline-block;
+    min-width: 12px; 
+    text-align: center;
+}
+
+
+.author-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.author-profile-popup {
+    position: absolute;
+    left: -100px;
+
+    top: 100%;                 
+    opacity: 0;
+    transform: translateY(30px);  
+    pointer-events: none;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    z-index: 20;
+
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%);
+    mask-image: linear-gradient(to top, transparent 0%, black 40%);
+}
+
+
+.product-author:hover + .author-profile-popup,
+.author-profile-popup:hover {
+    opacity: 1;
+
+    transform: translateY(-360px); 
+    pointer-events: auto;
+    transition:
+        transform 0.7s ease,
+        opacity 0.6s ease 0.2s;
+
+    -webkit-mask-image: none;
+    mask-image: none;
+}
+
+.author-profile-popup img {
+    width: 300px;
+}
+
+.author-wrapper:hover .product-author h6 a {
+    text-decoration: underline;
+}
