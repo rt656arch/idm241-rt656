@@ -379,3 +379,7 @@ strong {
 .author-wrapper:hover .product-author h6 a {
     text-decoration: underline;
 }
+
+.product-container h4 {
+    text-align: center;
+}
