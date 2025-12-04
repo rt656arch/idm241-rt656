@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Description</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="top">
+            <h1>Microinteractions Final Build</h1>
+            <h4>Link to Behance: (DO NOT SIGN IN)</h4>
+        <a href="https://www.behance.net/" target="_blank">https://www.behance.net/</a>
+        
+    </div>
+
+
+    <div class="example-product-card">
+
+        <div class="product-container">
+            <div class="container">
+                <img src="coverImg2.png" alt="cover image">
+
+                <a href="https://www.behance.net/gallery/236480711/Personal-illustration-vol11?tracking_source=search_pro" 
+                target="_blank" class="overlay">
+
+                    <div class="button" id="open">
+                        <img src="folder_icon.png" alt="folder icon">
+                        <div class="folderText">
+                            <p>Save</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.behance.net/" target="_blank" class="banner"> <img src="behance_BeTag.png" alt="behance tag"></a>
+                </a>
+                
+            </div>
+            <h5>product card, light background</h5>
+        </div>
+        
+
+        
+        <div class="product-container">
+            <div class="container">
+                <img src="coverImg-darkbg.png" alt="cover image">
+
+                <a href="https://www.behance.net/gallery/236480711/Personal-illustration-vol11?tracking_source=search_pro" 
+                target="_blank" class="overlay">
+
+                    <div class="button-light" id="open-light">
+                        <img src="folder_icon.png" alt="folder icon">
+                        <div class="folderText">
+                            <p>Save</p>
+                        </div>
+                    </div>
+
+                    <div class="banner">
+                        <a href="https://www.behance.net/galleries/photography/photography" target="_blank">
+                            <img src="behance_BeTag.png" alt="behance tag">
+                        </a>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="product-footer">
+                <div class="product-caption">
+                    <div class="product-title">
+                        <h5>Fading Echoes</h5>
+                    </div>
+                    <div class="product-author">
+                        <h6>Omar Eltahan</h6>
+                    </div>
+                </div>
+
+                <div class="thumbs-up">
+                    <i id="like-btn" class="fa fa-thumbs-up" style="font-size:22px;color:#959595; cursor:pointer;"></i>
+                    <span id="like-count">0</span>
+                    <!-- <i class="fa fa-thumbs-up"></i>
+                    <i class="fa fa-thumbs-up" style="font-size:48px;color:red"></i> -->
+                    <!-- <span class="like_text">Like</span>  -->
+                </div>
+            </div>
+            <h5>product card, dark background</h5>
+        </div>
+    </div>
+    
+
+    <div class="description">
+
+    
+
+        <div class="triggers">
+            <h3>TRIGGERS</h3>
+            <div class="product-card-trigger">
+                <p>Any <strong>Product Card</strong> placed near the middle of the page after scrolling down a little bit: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>Click</li>
+                </ul>
+            </div>
+            <div class="save-button-trigger">
+                <p><strong>Save Button</strong> that appears in the top left corner when a product card is hovered over: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>Click</li>
+                </ul>
+            </div>
+            <div class="tag-banner-trigger">
+                <p><strong>Tag Banner</strong> that appears in the top right corner when a product card is hovered over: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>Click</li>
+                </ul>
+            </div>
+            <div class="product-card-title-trigger">
+                <p><strong>Product Card Title</strong> placed under the product card and to the left: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>Click</li>
+                </ul>
+            </div>
+            <div class="product-card-author-trigger">
+                <p><strong>Product Card Author</strong> placed under the product card title and to the left: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                </ul>
+            </div>
+            <div class="thumbs-up-trigger">
+                <p><strong>Thumbs Up and Count </strong> placed under the product card and to the right: </p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>Click</li>
+                    <li>Click Again</li>
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="rules">
+            <h3>RULES</h3>
+            <div class="product-card-rules">
+                <p><strong>Product Card: </strong></p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>There is an overlay that fades in on the image with 25% opacity, darkening the image in 0.2 seconds</li>
+                            <li>A save folder appears in the top left corner in a capsule shape, with a folder icon on the left, and the text “save” on the right</li>
+                            <li>A blue bookmark shaped tag (with the abbreviation of the tag in two letters, placed towards the bottom of the tag) slides down over 0.4 seconds</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The overlay disappears over 0.2 seconds and the image brightens to original state</li>
+                            <li>The save capsule fades away with the overlay</li>
+                            <li>The bookmark tag banner slides up in 0.4 seconds</li>
+                            <li>Finger changes back to cursor</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="save-button-rules">
+                <p><strong>Save Button:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The slightly transparent and blurred black background color of the button darkens from 60% opacity to 90% opacity (over product images that have a light background)</li>
+                            <li>Over product images that have a dark background, the button lightens to a greyish color </li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The button color goes back to its original state </li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tag-banner-rules">
+                <p><strong>Tag Banner:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The banner slides down by 15% of its height</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The banner slides back up to original position, before it was hovered over</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-card-title-rules">
+                <p><strong>Product Card Title:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The title (with the text: "Fading Echoes") is underlined, which fades in over 0.6 second</li>
+                            <li>The pointer changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The title's underline fades out over 0.6 second</li>
+                            <li>The finger changes back to pointer</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-card-author-rules">
+                <p><strong>Product Card Author:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The author (with the text: "Omar Eltahan") is underlined, fades in over 600ms</li>
+                            <li>A popup with information on the author slides up from the author text, over 0.7 second, to stop above the author text</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The author's underline fades out over 0.6 second</li>
+                            <li>The popup slides back down out of view </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="thumbs-up-and-count-rules">
+                <p><strong>Thumbs Up and Count:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The pointer changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The finger changes back to pointer</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Click:
+                        <ul>
+                            <li>The thumb icon tilts up by 25 degrees and back down to original position over 0.8 second</li>
+                            <li>The thumb icon fades from grey to blue over 0.3 second</li>
+                            <li>The number scrolls up and increase by 1 over a second</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Click Again:
+                        <ul>
+                            <li>The thumb icon fades from blue back to grey over 0.8 second</li>
+                            <li>The number scrolls down to decrease by 1 over a second</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <div class="feedback">
+            <h3>FEEDBACK</h3>
+            <div class="product-card-feedback">
+                <p><strong>Product Card:</strong></p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>There is an overlay that fades in on the image with 25% opacity, darkening the image in 0.2 seconds</li>
+                            <li>A save folder appears in the top left corner in a capsule shape, with a folder icon on the left, and the text “save” on the right</li>
+                            <li>A blue bookmark shaped tag (with the abbreviation of the tag in two letters, placed towards the bottom of the tag) slides down</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The overlay disappears over 0.2 seconds and the image brightens to original state</li>
+                            <li>The save capsule fades away with the overlay</li>
+                            <li>The bookmark tag banner slides up in 0.4 seconds</li>
+                            <li>Finger changes back to cursor</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="save-button-feedback">
+                <p><strong>Save Button:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The slightly transparent and blurred black background color of the button darkens from 60% opacity to 90% opacity (over product images that have a light background)</li>
+                            <li>Over product images that have a dark background, the button lightens to a greyish color </li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The button color goes back to its original state </li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tag-banner-feedback">
+                <p><strong>Tag Banner:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The banner slides down by 15% of its height</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The banner slides back to original position, before it was hovered over</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-card-title-feedback">
+                <p><strong>Product Card Title:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The title (with the text: "Fading Echoes") is underlined, which fades in over 0.6 second</li>
+                            <li>The pointer changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The title's underline fades out over 0.6 second</li>
+                            <li>The finger changes back to pointer</li>
+                        </ul>
+                    </li>
+                    <li>Click:
+                        <ul> 
+                            <li>Goes to/links to a new webpage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-card-author-feedback">
+                <p><strong>Product Card Author:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The author (with the text: "Omar Eltahan") is underlined, fades in over 0.6 second</li>
+                            <li>A popup with information on the author slides up from the author text, over 0.7 second, to stop above the author text</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The author's underline fades out over 0.6 second</li>
+                            <li>The popup slides back down out of view </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="thumbs-up-and-feedback">
+                <p><strong>Thumbs Up and Count:</strong> </p>
+                <ul>
+                    <li>Hover On: 
+                        <ul>
+                            <li>The pointer changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off:
+                        <ul>
+                            <li>The finger changes back to pointer</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Click:
+                        <ul>
+                            <li>The thumb icon tilts up by 25 degrees and back down to original position over 0.8 second</li>
+                            <li>The thumb icon fades from grey to blue over 0.3 second</li>
+                            <li>The number scrolls up and increase by 1 over a second</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Click Again:
+                        <ul>
+                            <li>The thumb icon fades from blue back to grey over 0.8 second</li>
+                            <li>The number scrolls down to decrease by 1 over a second</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        <hr>
+
+        <div class="loops">
+            <h3>LOOPS and MODES</h3>
+            <ul>
+                <li>None</li>
+            </ul>
+        </div>
+
+
+        <hr>
+        <div class="images">
+            <img src="save-lightvdark.gif" alt="Behance interaction change">
+        </div>
+        <h5>Product Card, Save Button and Tag Banner animation</h5>
+        <hr>
+        <div class="image-2">
+            <img src="product-card-description.gif" alt="Behance interaction change">
+        </div>
+        <h5>Product Card Title, Author and Thumbs Up animation</h5>
+    </div>
+    
+    
+    
+
+    <script src="postload.js"></script>
+</body>
+</html>
