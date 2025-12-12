@@ -10,3 +10,49 @@
 body {
   font-family: "Acumin", sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.hero-image {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.hero-image img {
+  /* transition: transform 0.1s ease-in; */
+  width: 600px;
+  height: 100%;
+}
+
+.process {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.process img {
+  width: 350px;
+  border: 2px solid #001865;
+}
+.final-image img {
+  width: 600px;
+  border: 2px solid #001865;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 0 100px;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #053eff;
+  width: 100%;
+  height: 0;
+  display: block;
+}

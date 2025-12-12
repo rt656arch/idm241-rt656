@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDM241 Case Study</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Cherry+Bomb+One&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="container">
       <div class="content-wrapper">
         <!-- Hero Image -->
         <div class="placeholder-image hero-image">
-          <img src="hero.png" alt="hero image" />
+            <img src="save-lightvdark.gif" alt="hero gif">
         </div>
 
         <!-- Title Section -->
         <header class="title-section">
           <p class="subtitle">Rachel Tang's</p>
-          <h1 class="main-title">IDM241 Case Study (CURRENTLY NOT COMPLETE)</h1>
+          <h1 class="main-title">IDM241 Case Study</h1>
         </header>
 
         <!-- Overview Section -->
@@ -32,18 +26,17 @@
           <div class="section-content">
             <p>
               For this microinteractions class, I used HTML, CSS, and Javascript
-              to recreate and make improvements to microinteractions. The
-              component I decided to follow were the product cards on Behance.
+              to recreate and make improvements to microinteractions.
+              The components I decided to improve were the product cards on Behance.
+Behance is an online platform where creatives get to showcase their work, and I was interested in redesigning it because I was recently introduced to it and thought the platform was cool. 
             </p>
             <p>
               Through an iterative three-phase process (Alpha, Beta, and Final),
-              I determined all the triggers, rules, feedback, loops and mode of
-              each, and then built the microinteractions according to my
-              descriptions.
+              I determined all the triggers, rules, feedback, loops and mode of each phase of the redesigned component, and then built the microinteractions according to my descriptions.
             </p>
           </div>
         </section>
-
+<hr>
         <!-- Context and Challenges Section -->
         <section class="context-section">
           <h2>Context and Challenges</h2>
@@ -54,7 +47,7 @@
             </ol>
             <p class="step-content">
               From the end of September until the first week of December, I have
-              been the solo UX/UI designer and front-end and back-end developer
+              been the solo UX/UI designer and front-end developer
               of this course-long microinteractions project.
             </p>
           </div>
@@ -73,7 +66,7 @@
             </p>
           </div>
         </section>
-
+<hr>
         <!-- Process and Insights Section -->
         <section class="process-section">
           <h2>Process and Insights:</h2>
@@ -92,67 +85,38 @@
             <p class="step-content">
               I started by visiting a couple websites trying to gain an
               understanding of different components and their microinteractions.
-              From there, I tried to think of potential improvements
+              From there, I tried to think of potential improvements.
             </p>
-            <div class="process wireframe-image">
-              <img src="wireframe.jpg" alt="wireframe image" />
-            </div>
+
             <p class="step-content">
-              After that, I played around with the colors to decide how I wanted
-              the first impression to be. I ultimately decided on a blue theme
-              based on my preferences. I wanted to try something new as I tend
-              to lean towards a pinker color palette and was hoping to give
-              myself a challenge. In addition, the fonts I had chosen were
-              further a welcoming feeling with the bubble letters inviting
-              whimsy and cute charm.
+            Despite being a design platform, Behance has little to no animations for their micro-interactions at all. Their product cards have simple functions to encourage users to login/sign up. I started by building out how Behance has designed the cards exactly. This helps me understand the basics and lays the structuring for how I will begin to improve from there. 
             </p>
             <div class="process alpha-image">
-              <img src="alpha.png" alt="alpha image" />
+              <img src="alpha-build.png" alt="alpha build">
             </div>
             <p class="step-content">
-              Aside from the aesthetics, I also focused on laying the
-              foundational technical work. This includes data-mining and
-              cleaning. After receiving the folder of files I had to come
-              through, I was able to organize it into a table separating
-              important valuables with one another which will be more important
-              later in Beta. Despite not needing the database to be linked at
-              this time, it was vital for me to start ASAP so that when Beta is
-              assigned, I can get started immediately.
+             After determining what makes Behance’s product card unique, I began to ideate improvements based on the current design and the feasibility of the project.
             </p>
           </div>
 
           <!-- Beta Phase -->
-          <div class="step">
+        <div class="step">
             <ol start="2">
               <li>Beta</li>
             </ol>
             <p class="step-content">
-              After Alpha, I ran the colors I originally used through a color
-              contrast checker and realized that the blues I had chosen could be
-              difficult to read. Because my main goal was to make gathering
-              these recipes more accessible, I ended up changing into a higher
-              contrast color palette I was more familiar with: pink and magenta
-              (put in hex codes)
+              The first iteration of improvements includes a hover animation on the Behance logo that is revealed when a user is already on the card. I wanted to make the sudden appearance of the behance tag to instead, slide down smoothly.   </p>
+
+            <p class="step-content">
+              In addition to the hover animation on the behance tag, I added a hover animation onto the “Saved” button. It changes opacity once the mouse enters the button’s space and the opacity change to 100% allows the user to know they can click on it to save. I noticed that on product cards with darker images, the user can't really tell if they're hovered over it or not, so I made the initial opacity a lighter gray 
+                to contrast better with both light and dark images.
             </p>
             <div class="process beta-image">
-              <img src="beta.png" alt="beta image" />
+              <img src="beta-description.gif" alt="beta build">
             </div>
-            <p class="step-content">
-              After determining the color palette, the base I laid in Alpha
-              allowed me to build my PHP and run it through rounds of trial and
-              error. The pinks I chose seemed to be more friendly to the eye as
-              well as more interesting to look at. I finally got to lay out all
-              of the data I had collected and successfully inputted into a
-              table.
-            </p>
-            <p class="step-content">
-              At this point, the database of the recipes I was collecting
-              earlier has now been implemented to the Beta project so I know how
-              each of the recipes will look like on the design I have made, this
-              also allowed me to ensure the site's responsiveness and debug
-              anything that may have been lost when connecting my data.
-            </p>
-          </div>
+        </div>
+        
+  
 
           <!-- Finals Phase -->
           <div class="step">
@@ -160,104 +124,47 @@
               <li>Finals</li>
             </ol>
             <p class="step-content">
-              Based on the critiques from the last projects, I knew that I had
-              to design at a bit of a higher level, include more images, and
-              ensure all of my fonts were loading. At this point, my design is
-              set in stone, it was a matter of making sure that the PHP code was
-              clean.
+            In this final stage I decided to include a like feature and gave room for the post information which would also be interactable. The like button is represented by an icon, the thumbs up, and will have its own animation once selected. Not only does it jump and rotate slightly, the gray icon slowly becomes blue. As for the post information, it is indicated that a user can interact with it as an underline appears underneath the text.
             </p>
             <div class="process final-image">
-              <img src="final.png" alt="final image" />
+              <img src="final-bottom.png" alt="like feature">
             </div>
             <p class="step-content">
-              Troubleshooting why some images loaded in while some did not,
-              investigating why fonts were not always loading, and also making
-              sure I kept my code consistent is where I had lacked. To do this,
-              I started implementing a higher level of microinteractions into
-              the project. I have added hover states where I can to push the
-              narrative I want to portray of something fun and whimsical. In
-              addition, I went back to make sure all the images were loading by
-              combing through typos. Lastly, ensuring that the font loads is a
-              rookie mistake, but going through each line of your CSS and making
-              sure it is as optimized as possible takes a lot of time but I
-              managed to get it done.
+             Another microinteraction that I implemented is the hover state of the poster specifically. When hovered on, the profile of the poster would appear with some details regarding their profile stats like followers and views. I thought this would be important to include in the case a user wanted quick access to this profiles’s credibility.
             </p>
+            <div class="process final-image">
+              <img src="final-profile.png" alt="profile feature">
+            </div>
           </div>
         </section>
-
+<hr>
         <!-- Solution Section -->
         <section class="solution-section">
           <h2>Solution</h2>
 
           <p class="intro-text emphasis">
-            With these improvements, it leaves us with my final recipe project:
+            My main improvements to this microinteractions are:
           </p>
-          <br />
 
-          <div class="process final-single-image">
-            <img src="final_single.png" alt="single recipe final image" />
-          </div>
 
           <p class="step-content">
-            You may not be able to tell by this screen but behind this has gone
-            through many internal conflicts of design hierarchy, spending lots
-            of efforts to make sure my database connection was clean, and rounds
-            of critiques. Because of all of that, I was able to make "Recipes"
-            what it is at its current stage. A recipe website that is easily
-            navigable and organized geared for people who want to have more fun.
+            Including more feedback for a curious user. The original offers similar features but the actions that are implied to continue interacting with the card is not clear nor defined. I improved this by giving the user smooth feedback through animated hover states.
           </p>
-          <p class="step-content">
-            Defining features that would determine whether or not I was
-            successful would be the search bar, a wide range of filters to sift
-            through, and easily readable text. For this to be as efficient and
-            as fun as I wanted it to be I tackled these core things.
-          </p>
+        
 
-          <div class="feature-list">
-            <ol start="1">
-              <li>Efficiency</li>
-            </ol>
-            <p>
-              Coming from the stack of pdfs we first received, the product I
-              went on to design was to give a place where all of those recipes
-              could live at once. To prevent fatigue from the tiring search it
-              would've been to read through all those recipes, efficient design
-              allows users to search for ingredients they want to use with ease.
-              This is solved with my implementation of both the search and
-              filter keys.
-            </p>
+         
 
-            <ol start="2">
-              <li>First Impressions</li>
-            </ol>
-            <p>
-              Cooking can be intimidating, especially when you might be given a
-              large stack of recipes you've never seen before. To ease users in,
-              I designed a landing screen to invoke fun and add some character
-              which is not common in most other recipe websites (based on
-              personal competitor analysis).Using bright and bold/bubbly
-              aesthetics brings a warmth to the brand and invites more people to
-              come!
-            </p>
-          </div>
-        </section>
-
+<hr>
         <!-- Results Section -->
         <section class="results-section">
           <h2>Results</h2>
           <p>
-            Because this project is a reflection of a hypothetical recipe site,
-            its success can be hard to determine. Despite it all, the overall
-            design is successful in achieving its goal to be efficient and fun.
-            If given more time, I would have liked to include more
-            microinteractions to make the website definitely pop. I would also
-            try to steer away from my signature color to really push myself to
-            design for a wider palette.
+            I think that I was able to follow Behance’s current branding very well. By implementing small details to an already published work can be messy due to the scope of branding however I was able to improve without straying away from the sleek and modern layout Behance is known for. If given more time I would build out the profile pop up and try to iterate on improvements with the microinteractions on that too, and also implementing a scrolling animation whenever a number increases or decreases when a user likes the product.
           </p>
           <p>
             My Final
             <a
-              href="https://digmstudents.westphal.drexel.edu/~rt656/idm232-rt656/index.php"
+              href="https://idm241.netlify.app/final/build/index.html"
               target="blank"
               >[here!]</a
             >
@@ -267,3 +174,4 @@
     </div>
   </body>
 </html>
+
